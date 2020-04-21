@@ -1,8 +1,9 @@
 .page {
-  position: absolute;
-  width: calc(100% - #{$sidebar-width});
-  height: 100%;
-  overflow-y: auto;
+  // position: absolute;
+  // width: calc(100% - #{$sidebar-width});
+  // height: 100%;
+  // overflow-y: auto;
+  padding-left: 300px;
   color: #000;
   background: #fff;
   padding-bottom: 20px;
@@ -52,7 +53,7 @@
 
     blockquote {
       margin: 0;
-      margin-bottom: .85em;
+      margin-bottom: 0.85em;
       padding: 0 15px;
       color: #858585;
       border-left: 4px solid #e5e5e5;
@@ -66,7 +67,8 @@
       color: #6e6b5e;
       background: #f1f1f1;
       font-size: 0.875em;
-      font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+      font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo,
+        "DejaVu Sans Mono", monospace, monospace;
     }
 
     iframe {
@@ -94,10 +96,11 @@
 
     font-size: 1.6rem;
     word-wrap: break-word;
+    overflow-wrap: anywhere;
     line-height: 1.7;
-    position: relative;
+    // position: relative;
     left: 0;
-    max-width: 800px;
+    // max-width: 800px;
     margin: 0 auto;
     padding: 0 15px 40px;
 
@@ -107,7 +110,8 @@
     }
   }
 
-  .previous, .next {
+  .previous,
+  .next {
     position: fixed;
     display: flex;
     top: 50px;
@@ -141,7 +145,8 @@
   }
 
   @include max-screen(1250px) {
-    .previous, .next {
+    .previous,
+    .next {
       position: static;
       top: auto;
       display: inline-block;
@@ -164,6 +169,7 @@
 .page-without-menu {
   width: 100%;
   left: 0;
+  padding-left: 0;
 
   .previous {
     left: 15px;
@@ -174,6 +180,7 @@
   .page {
     width: 100%;
     left: 0;
+    // padding-left: 0px;
   }
 }
 
@@ -216,7 +223,8 @@
 }
 
 .search-mode {
-  .prev-link, .next-link {
+  .prev-link,
+  .next-link {
     display: none;
   }
 }
