@@ -1,5 +1,5 @@
 +++
-title = "Zola Book Theme Sort Order"
+title = "Default Book Theme Sort Order"
 +++
 
 The sort order of chapters and pages rendered by the Zola Book theme are generated in alphabetical order.
