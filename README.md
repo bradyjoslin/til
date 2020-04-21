@@ -34,8 +34,6 @@ zola build
 wrangler publish
 ```
 
-## [TO-DO] Deploy with GitHub Action
+## Deploy with GitHub Action
 
 Push to the master branch of this repo which will trigger a Github Action to publish using [Wrangler Action](https://github.com/cloudflare/wrangler-action).
-
-Need to work through doing Zola build as part of a GitHub action.
