@@ -1,0 +1,10 @@
+name = "til"
+type = "webpack"
+workers_dev = false
+account_id = "d3765f1c5f3d3ed76be2701b78510d29"
+zone_id = "0b43369dd5bc0e0b2c3c768c1b478ee4"
+route = "til.bradyjoslin.com/*"
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
