@@ -2,7 +2,7 @@
 title = "Local Server for Testing WASM"
 +++
 
-Testing WASM in the browser requires a web server, as most browsers restrict running WASM from local files. To quickly get a local webserver running to test a WASM file, you can use Python to run a web server to host the static files in a directory and use the correct mime type for the WASM file. Create a file called serve.py containing:
+Testing Wasm in the browser requires a web server, as most browsers restrict running Wasm from local files. To quickly get a local webserver running to test a Wasm file, you can use Python to run a web server to host the static files in a directory and use the correct mime type for the Wasm file. Create a file called serve.py containing:
 
 ```python
 import http.server
