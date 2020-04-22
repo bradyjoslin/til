@@ -11,6 +11,8 @@ Custom background directory on:
 - Mac: `~/Library/Application Support/Microsoft/Teams/Backgrounds/Uploads`
 - Windows: `%AppData%\Microsoft\Teams\Backgrounds\Uploads`
 
+You may need to turn video off and back on to see newly added images.
+
 This let's you do fun things like add a [Max Headroom](https://en.wikipedia.org/wiki/Max_Headroom) background.
 
 ![headroom](../headroom.png)
