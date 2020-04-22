@@ -6,15 +6,15 @@ Create slideshow-like transitions for navigating content.
 
 Svelte port of [https://codepen.io/chriscoyier/pen/pMRgwW](https://codepen.io/chriscoyier/pen/pMRgwW) further explained on [CSS-Tricks](https://css-tricks.com/practical-css-scroll-snapping/).
 
-_TODO: experiment using svelte transitions instead of CSS_
-
 Demo (use keyboard right/left to navigate):
 
 {{ svelte(name="scrollsnapper", cfg='{}') }}
 
 &nbsp;
 
-Code:
+Code ([Svelte repl](https://svelte.dev/repl/2f5ca1b9da90406cbe6678791193f0d4?version=3.20.1)):
+
+_TODO: experiment using Svelte [transitions](https://svelte.dev/tutorial/transition) instead of CSS_
 
 ```html
 <script>
