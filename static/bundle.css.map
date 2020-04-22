@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../svelte-components/ScrollSnapper.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n  let sections = [\n    \"Section 1\",\n    \"Section 2\",\n    \"Section 3\",\n    \"Section 4\",\n    \"Section 5\"\n  ];\n</script>\n\n<style>\n  * {\n    box-sizing: border-box;\n    margin: 0;\n    padding: 0;\n  }\n  .slider {\n    font-family: sans-serif;\n    scroll-snap-type: x mandatory;\n    display: flex;\n    -webkit-overflow-scrolling: touch;\n    overflow-x: scroll;\n    border: 1px solid black;\n  }\n  section {\n    border-right: 1px solid white;\n    padding: 1rem;\n    min-width: 100%;\n    height: 50vh;\n    scroll-snap-align: start;\n    text-align: center;\n    position: relative;\n  }\n  h1 {\n    position: absolute;\n    top: 50%;\n    transform: translateY(-50%);\n    text-align: center;\n    color: black;\n    width: 100%;\n    left: 0;\n    font-size: calc(1rem + 3vw);\n  }\n</style>\n\n<!-- svelted version of https://codepen.io/chriscoyier/pen/pMRgwW \n\t   TODO:  experiment using svelte transitions instead of the CSS\n-->\n<div class=\"slider\">\n  {#each sections as section}\n    <section>\n      <h1>{section}</h1>\n    </section>\n  {/each}\n</div>\n"
+  ],
+  "names": [],
+  "mappings": "AAWE,eAAE,CAAC,AACD,UAAU,CAAE,UAAU,CACtB,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,AACZ,CAAC,AACD,OAAO,eAAC,CAAC,AACP,WAAW,CAAE,UAAU,CACvB,gBAAgB,CAAE,CAAC,CAAC,SAAS,CAC7B,OAAO,CAAE,IAAI,CACb,0BAA0B,CAAE,KAAK,CACjC,UAAU,CAAE,MAAM,CAClB,MAAM,CAAE,GAAG,CAAC,KAAK,CAAC,KAAK,AACzB,CAAC,AACD,OAAO,eAAC,CAAC,AACP,YAAY,CAAE,GAAG,CAAC,KAAK,CAAC,KAAK,CAC7B,OAAO,CAAE,IAAI,CACb,SAAS,CAAE,IAAI,CACf,MAAM,CAAE,IAAI,CACZ,iBAAiB,CAAE,KAAK,CACxB,UAAU,CAAE,MAAM,CAClB,QAAQ,CAAE,QAAQ,AACpB,CAAC,AACD,EAAE,eAAC,CAAC,AACF,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,GAAG,CACR,SAAS,CAAE,WAAW,IAAI,CAAC,CAC3B,UAAU,CAAE,MAAM,CAClB,KAAK,CAAE,KAAK,CACZ,KAAK,CAAE,IAAI,CACX,IAAI,CAAE,CAAC,CACP,SAAS,CAAE,KAAK,IAAI,CAAC,CAAC,CAAC,GAAG,CAAC,AAC7B,CAAC"
+}

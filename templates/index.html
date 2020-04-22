@@ -12,6 +12,10 @@
       {% block js %}
       {% endblock js %}
 
+      <!-- Svelte -->
+      <link href="{{ get_url(path="bundle.css", trailing_slash=false) }}" rel="stylesheet" />
+      <script defer src="{{ get_url(path="bundle.js", trailing_slash=false) }}"></script>
+
       <!-- CSS -->
       {% block css %}
       <link rel="stylesheet" href="{{ get_url(path="book.css") | safe }}">
