@@ -1,5 +1,5 @@
 +++
-title = "Weather Info From the Console"
+title = "Weather Forecast"
 +++
 
 `curl wttr.in`
