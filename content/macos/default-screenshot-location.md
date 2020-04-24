@@ -2,7 +2,7 @@
 title = "Default Screenshot Location"
 +++
 
-To change the default screenshot location:
+On macOS the default location for screenshots is the desktop, but cluttered desktops are no fun. To change the default screenshot location:
 
 Open terminal and enter:
 
