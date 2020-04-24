@@ -1,6 +1,6 @@
 # Today I Learned Site for Brady Joslin
 
-**Today I Learned** - a collection of memorable snippets noted here for personal reference and shared if by chance it provides value to others. These are inentionally short notes, not complete thoughts or blog posts. Static site is generated using [Zola's](https://getzola.org) [Book theme](https://github.com/getzola/book).
+**Today I Learned** - a collection of memorable snippets noted here for personal reference and shared if by chance it provides value to others. These are inentionally short notes, not complete thoughts or blog posts. Static site is generated using [Zola's](https://getzola.org) [Book theme](https://github.com/getzola/book).  Available online at [til.bradyjoslin.com](https://til.bradyjoslin.com).
 
 ## Get started
 
