@@ -1,6 +1,8 @@
 import ScrollSnapper from "./ScrollSnapper.svelte";
+import SampleBasicHistogram from "./SampleBasicHistogram.svelte";
+import SampleHistogram from "./SampleHistogram.svelte";
 
-let containers = [ScrollSnapper];
+let containers = [ScrollSnapper, SampleBasicHistogram, SampleHistogram];
 
 function generateComponent(component, target, props) {
   props.cfg.anchor != null
