@@ -1,8 +1,8 @@
 +++
-title = "Histograms with SVG"
+title = "Histograms"
 +++
 
-Building SVG-based histograms with Svelte is fairly straightforward.
+Building histograms with Svelte is fairly straightforward.
 
 Here's a naive example of a histogram where the bar height is the number of pixels matching the value of each datapoint. Svelte's each loop is used to render a bar per point in the data, with the bar height set the the value of the point.
 
