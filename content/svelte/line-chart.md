@@ -12,16 +12,16 @@ Demo:
 
 &nbsp;
 
-A new variable `path` is defined using D3's line function, where we provide the function for scaling the x and y values along with an additional curve function [curveStep](https://github.com/d3/d3-shape#curveStep) to refine the shape of the line.
+A variable `path` is defined using D3's line function, where we provide the function for scaling the x and y values along with an additional curve function [curveStep](https://github.com/d3/d3-shape#curveStep) to refine the shape of the line.
 
 ```JavaScript
 let path = line()
   .x(d => xScale(d.date))
   .y(d => yScale(d[city]))
-.curve(curveStep);
+  .curve(curveStep);
 ```
 
-And instead of an SVG group containing a loop generating `rect` elements, include a single `path` element with the `d` attribute equal to the value of the data set sent to the path function defined above.
+And instead of an SVG group containing a Svelte loop generating `rect` elements, include a single `path` element with the `d` attribute equal to the value of the data set sent to the path function defined above. This allows D3 to automatically calculate the path of the line to represent the data.
 
 ```html
 <g>
