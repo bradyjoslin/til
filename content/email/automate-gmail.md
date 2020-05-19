@@ -6,7 +6,7 @@ Automate Gmail with [Google Apps Scripts](https://script.google.com/home), which
 
 This particular sample script evaluates all threads in the inbox, applies a label "Decaying" to any messages over 14 days old, and applies a label "Auto-Archived" and archives any threads older than 28 days, removing them from the inbox.
 
-Set a trigger for the script under the app script project settings - recommend scheduling every day at midnight.
+Set a trigger for the script under the app script project settings. Recommend scheduling every day at midnight.
 
 ```javascript
 function inbox_ager() {
