@@ -11,12 +11,12 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-14
 #
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
-   && apt-get -y install --no-install-recommends curl make g++ libssl-dev \
-   #
-   # Clean up
-   && apt-get autoremove -y \
-   && apt-get clean -y \
-   && rm -rf /var/lib/apt/lists/*
+    && apt-get -y install --no-install-recommends curl make g++ libssl-dev \
+    #
+    # Clean up
+    && apt-get autoremove -y \
+    && apt-get clean -y \
+    && rm -rf /var/lib/apt/lists/*
 
 # Get Rust
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
@@ -29,5 +29,7 @@ RUN npx degit getzola/zola /root/workspaces/zola \
     && cargo build --release
 ENV PATH="/root/workspaces/zola/target/release:${PATH}"
 
+# Install Wrangler
+RUN cargo install wrangler --version "1.9.0"
 ENV DEBIAN_FRONTEND=dialog
 
