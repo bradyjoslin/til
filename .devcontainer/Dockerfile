@@ -24,12 +24,17 @@ RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
 ENV PATH="/root/.cargo/bin:${PATH}"
 
 # Install Zola
-RUN npx degit getzola/zola /root/workspaces/zola \
-    && cd /root/workspaces/zola \
-    && cargo build --release
-ENV PATH="/root/workspaces/zola/target/release:${PATH}"
+RUN curl -sSOL https://github.com/getzola/zola/releases/download/v0.11.0/zola-v0.11.0-x86_64-unknown-linux-gnu.tar.gz \
+    && mkdir -p /root/workspaces/zola/ \
+    && tar -xf zola-v0.11.0-x86_64-unknown-linux-gnu.tar.gz -C /root/workspaces/zola/
+ENV PATH="/root/workspaces/zola/:${PATH}"
 
 # Install Wrangler
-RUN cargo install wrangler --version "1.9.0"
+RUN curl -sSOL https://github.com/cloudflare/wrangler/releases/download/v1.9.2/wrangler-v1.9.2-x86_64-unknown-linux-musl.tar.gz \
+    && mkdir -p /root/workspaces/wrangler/ \
+    && tar -xf wrangler-v1.9.2-x86_64-unknown-linux-musl.tar.gz -C /root/workspaces/wrangler/
+ENV PATH="/root/workspaces/wrangler/dist/:${PATH}"
+
+# RUN cargo install wrangler --version "1.9.0"
 ENV DEBIAN_FRONTEND=dialog
 
