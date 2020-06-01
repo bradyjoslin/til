@@ -22,7 +22,7 @@ jobs:
     - name: Install and Run Zola
       run: |
         sudo apt-get install aspell-en
-        aspell --help
+        ./spellcheck list
         sudo snap install --edge zola
         zola build
     - name: Deploy to Cloudflare Workers with Wrangler
