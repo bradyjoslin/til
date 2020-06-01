@@ -2,7 +2,7 @@
 title = "Build Zola Using GitHub Actions"
 +++
 
-Zola can be installed on the ubuntu-latest GitHub Action runner using [snap](https://snapcraft.io/). Here's a sample GitHub Action definition that installs Zola, builds the site, then uploads it to a Cloudflare Worker using the Wranlger Action.
+Zola can be installed on the ubuntu-latest GitHub Action runner using [snap](https://snapcraft.io/). Here's a sample GitHub Action definition that installs Zola, builds the site, then uploads it to a Cloudflare Worker using the Wrangler Action.
 
 ```yml
 # Build site using Zola and Deploy to Cloudflare Workers

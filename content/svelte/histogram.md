@@ -39,7 +39,7 @@ Code ([repl](https://svelte.dev/repl/f3aa9a3007f447da97112e7f7c4dfb68?version=3.
 </svg>
 ```
 
-In real life scenarios, scaling the data is required to allow the values to fit the desired size of the graph. One way to handle this is by using D3's scaling functions, while still letting Svelte handle the DOM manipulation. This is the way [Rich Harris describes](https://shoptalkshow.com/349/#transcript) using Svelte for his work at NY Times, as it allows leveraging Sevelte's server side rendering functionality.
+In real life scenarios, scaling the data is required to allow the values to fit the desired size of the graph. One way to handle this is by using D3's scaling functions, while still letting Svelte handle the DOM manipulation. This is the way [Rich Harris describes](https://shoptalkshow.com/349/#transcript) using Svelte for his work at NY Times, as it allows leveraging Svelte's server side rendering functionality.
 
 Additionally, useful graphs include labeled axes. Therefore, here's a more complete example:
 
@@ -166,7 +166,7 @@ In this example D3 provides:
 - `scaleTime` scales JavaScript date objects
 - `linearScale` scales a numeric set of data linearly
 
-D3's [continous scaling functions](https://github.com/d3/d3-scale#continuous-scales) take in an extent (min/max) as the `domain` and desired dimension constraint output as the `range`. Typically the `domain` constraints include accommodation for the desired margins for the graph. A scaling function is defined for each axis, and used to transform the relevant data points to their scaled values. In this case scaling occurs within an `each` loop iterating through the data to determine each bar's position on the x axis and height on the y axis.
+D3's [continuous scaling functions](https://github.com/d3/d3-scale#continuous-scales) take in an extent (min/max) as the `domain` and desired dimension constraint output as the `range`. Typically the `domain` constraints include accommodation for the desired margins for the graph. A scaling function is defined for each axis, and used to transform the relevant data points to their scaled values. In this case scaling occurs within an `each` loop iterating through the data to determine each bar's position on the x axis and height on the y axis.
 
 Typically axis labels and ticks are indicated for every n'th value from the data set, therefore a new array per axis can be created comprising a subset of the data for every n'th value from the charted data. In this example, the x axis has a bar per day, while the ticks are indicated per month, and the y axis ticks are per every 5 degress instead of per each degree.
 
