@@ -18,6 +18,7 @@ PostCSS
 PowerBI
 Repos
 SSID
+SQLite
 Svelte's
 Svelted
 TCPServer
