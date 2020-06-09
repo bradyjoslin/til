@@ -12,6 +12,8 @@ DevTools
 Gmail
 GmailApp
 HelloFriends
+HMAC
+JSON
 Logpoint
 Logpoints
 PostCSS
@@ -28,6 +30,7 @@ Trackpad
 Uncheck
 WASM
 Wasm
+Webhook
 addLabel
 ager
 apiToken
@@ -60,6 +63,7 @@ http
 httpd
 iframe
 javascript
+json
 keychain
 labelName
 linearScale
@@ -89,12 +93,14 @@ substr
 sudo
 termina
 timeParse
+tldr
 trackpad
 translateY
 twoWeeks
 ubuntu
 walkthrough
 wasm
+webhook
 webkit
 webserver
 wttr
