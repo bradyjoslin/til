@@ -44,10 +44,14 @@
     }
 
     pre {
-      padding: 1rem;
-
+      width: 100%;
       span {
-        white-space: pre-wrap;
+        white-space: no-wrap;
+      }
+      code {
+        padding: 1em;
+        width: 100%;
+        overflow: auto;
       }
     }
 
@@ -64,9 +68,8 @@
       vertical-align: middle;
       padding: 0.1em 0.3em;
       border-radius: 3px;
-      color: #6e6b5e;
-      background: #f1f1f1;
-      font-size: 0.875em;
+      background: #f6f8fa;
+      font-size: 0.85em;
       font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo,
         "DejaVu Sans Mono", monospace, monospace;
     }
