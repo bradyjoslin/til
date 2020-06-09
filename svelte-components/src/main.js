@@ -2,12 +2,14 @@ import ScrollSnapper from "./ScrollSnapper.svelte";
 import SampleBasicHistogram from "./SampleBasicHistogram.svelte";
 import SampleHistogram from "./SampleHistogram.svelte";
 import LineChart from "./LineChart.svelte";
+import SortableTable from "./SortableTable.svelte";
 
 let containers = [
   ScrollSnapper,
   SampleBasicHistogram,
   SampleHistogram,
   LineChart,
+  SortableTable
 ];
 
 function generateComponent(component, target, props) {
