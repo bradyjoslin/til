@@ -19,6 +19,7 @@ Logpoints
 PostCSS
 PowerBI
 Repos
+Sortable
 SSID
 SQLite
 Svelte's
@@ -87,11 +88,17 @@ scaleLinear
 scaleTime
 scrollsnapper
 socketserver
+sortable
+sortabletable
+sortBy
+sortModifier
 sqlite
 subdirectory
 substr
 sudo
 termina
+tbody
+thead
 timeParse
 tldr
 trackpad
