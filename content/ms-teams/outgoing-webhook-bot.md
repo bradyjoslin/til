@@ -8,7 +8,7 @@ title = "MS Teams Outgoing Webhook Bot"
 
 ### How it works
 
-The @mention triggers a POST request to the worker containing information about the conversation message. The worker verifies the webhook signature using an HMAC token, can then obtain and perform actions based on the message details, and replies with a JSON response that gets rendered as a threaded reply:
+The @mention triggers a POST request containing information about the conversation message to the worker. The worker verifies the webhook signature using an HMAC token, can then obtain and perform actions based on the message details, and replies with a JSON response that gets rendered as a threaded reply:
 
 ```json
 {
