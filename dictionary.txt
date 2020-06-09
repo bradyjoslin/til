@@ -33,6 +33,7 @@ Uncheck
 WASM
 Wasm
 Webhook
+activeTab
 addLabel
 ager
 apiToken
@@ -55,6 +56,7 @@ extentX
 extentY
 forEach
 fourWeeks
+getElementById
 getLabel
 getLastMessageDate
 getMonth
@@ -72,6 +74,7 @@ linearScale
 linechart
 lsof
 macOS
+mkdir
 monthNames
 moveToArchive
 n'th
@@ -111,6 +114,7 @@ wasm
 webhook
 webkit
 webserver
+wikipedia
 wttr
 xLabel
 xPath
