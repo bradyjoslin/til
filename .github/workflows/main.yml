@@ -19,11 +19,17 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - name: Install and Run Zola
-      run: |
-        ./spellcheck.sh list
-        sudo snap install --edge zola
-        zola build
+    - name: Spellcheck then install and run Zola
+    - run: ./spellcheck.sh list
+    - name: Installing Zola
+    - run: |
+        cd $HOME
+        curl -sSOL https://github.com/getzola/zola/releases/download/v0.11.0/zola-v0.11.0-x86_64-unknown-linux-gnu.tar.gz
+        mkdir -p $HOME/.zola
+        tar -xf zola-v0.11.0-x86_64-unknown-linux-gnu.tar.gz -C $HOME/.zola/
+        rm zola-v0.11.0-x86_64-unknown-linux-gnu.tar.gz
+        cd $GITHUB_WORKSPACE
+        $HOME/.zola/zola build
     - name: Deploy to Cloudflare Workers with Wrangler
       uses: cloudflare/wrangler-action@1.1.0
       with:
