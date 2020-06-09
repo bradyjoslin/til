@@ -13,3 +13,13 @@ Would create a new directory called `book` containing a copy of latest version o
 You can also just grab a portion of an existing repo instead of a full copy:
 
 `degit user/repo/subdirectory`
+
+There is also a [degit Rust clone](https://github.com/psnszsn/degit-rs) which has the benefit of not requiring node and can be installed as a single binary.
+
+For Rustaceans:
+
+```bash
+cargo install degit
+```
+
+Or grab the latest binary from the [Release tab](https://github.com/psnszsn/degit-rs/releases) of the project and add it to your path.
