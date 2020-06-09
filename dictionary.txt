@@ -19,6 +19,7 @@ Logpoints
 PostCSS
 PowerBI
 Repos
+Rustaceans
 Sortable
 SSID
 SQLite
