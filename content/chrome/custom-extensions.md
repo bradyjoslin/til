@@ -1,5 +1,5 @@
-+++ 
-title = "Custom Extensions" 
++++
+title = "Custom Extensions"
 +++
 
 Build your own local Chrome extensions to customize your experience visiting web sites and remove annoyances.
