@@ -28,3 +28,9 @@ Guest WiFi
 
 password: "HelloFriends!"
 ```
+
+The System keychain record for that SSID can be updated so that `security` is always allowed access to the password. This requires sudo and should only be done for Wi-Fi passwords not considered secret, as will allow this app and others to read the password without being prompted for credentials.
+
+```bash
+sudo security add-generic-password -U -a <ssid> -D "AirPort network password" -T "/usr/bin/security" -s "AirPort"  /Library/Keychains/System.keychain
+```
